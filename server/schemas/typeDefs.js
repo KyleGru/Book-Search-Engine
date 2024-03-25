@@ -1,6 +1,4 @@
-const { gql } = require('@apollo/server');
-
-const typeDefs = gql`
+const typeDefs =`
 
 type User {
     _id: ID!
@@ -43,6 +41,6 @@ type Mutation {
     saveBook(input: savedBook!): User
     removeBook(bookId: ID!): User
 }
-;`
+`;
 
 module.exports = typeDefs;
